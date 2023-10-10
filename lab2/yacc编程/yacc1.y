@@ -61,7 +61,7 @@ int yylex()
         }else if(isdigit(t)){
             //TODO:解析多位数字返回数字类型 
            yylval=0;
-           while(isdigit(t))
+           while(isdigit(t))    //识别多位十进制整数
            {
                 yylval=yylval*10+t-'0';
                 t=getchar();
